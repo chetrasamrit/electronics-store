@@ -1,0 +1,42 @@
+import type { Config } from 'tailwindcss'
+
+export default {
+  content: [
+    './app/components/**/*.{vue,js,ts}',
+    './app/layouts/**/*.vue',
+    './app/pages/**/*.vue',
+    './app/app.vue',
+    './app/error.vue',
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          50:  '#eff6ff',
+          100: '#dbeafe',
+          200: '#bfdbfe',
+          300: '#93c5fd',
+          400: '#60a5fa',
+          500: '#3b82f6',
+          600: '#2563eb',
+          700: '#1d4ed8',
+          800: '#1e40af',
+          900: '#1e3a8a',
+        },
+        accent: {
+          400: '#fb923c',
+          500: '#f97316',
+          600: '#ea580c',
+        },
+      },
+      boxShadow: {
+        card: '0 2px 12px 0 rgba(0,0,0,0.08)',
+        'card-hover': '0 8px 30px 0 rgba(0,0,0,0.14)',
+      },
+    },
+  },
+  plugins: [],
+} satisfies Config
