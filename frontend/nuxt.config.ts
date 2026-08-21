@@ -3,9 +3,6 @@ export default defineNuxtConfig({
   future: {
     compatibilityVersion: 4,
   },
-  nitro: {
-    preset: 'cloudflare-pages',
-  },
   vite: {
     server: {
       hmr: {
